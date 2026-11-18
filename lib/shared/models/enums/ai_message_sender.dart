@@ -1,0 +1,1 @@
+enum AIMessageSender { user, assistant }

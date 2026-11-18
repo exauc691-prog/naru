@@ -1,0 +1,68 @@
+import '../models/daily_goal_model.dart';
+import 'mock_dates.dart';
+
+final mockDailyGoals = List<DailyGoalModel>.unmodifiable([
+  DailyGoalModel(
+    id: 'daily-goal-6-days-ago',
+    targetMinutes: 20,
+    completedMinutes: 15,
+    targetLessons: 1,
+    completedLessons: 0,
+    date: mockCalendarDate(6),
+    isCompleted: false,
+  ),
+  DailyGoalModel(
+    id: 'daily-goal-5-days-ago',
+    targetMinutes: 20,
+    completedMinutes: 0,
+    targetLessons: 1,
+    completedLessons: 0,
+    date: mockCalendarDate(5),
+    isCompleted: false,
+  ),
+  DailyGoalModel(
+    id: 'daily-goal-4-days-ago',
+    targetMinutes: 20,
+    completedMinutes: 18,
+    targetLessons: 1,
+    completedLessons: 0,
+    date: mockCalendarDate(4),
+    isCompleted: false,
+  ),
+  DailyGoalModel(
+    id: 'daily-goal-3-days-ago',
+    targetMinutes: 20,
+    completedMinutes: 25,
+    targetLessons: 1,
+    completedLessons: 1,
+    date: mockCalendarDate(3),
+    isCompleted: true,
+  ),
+  DailyGoalModel(
+    id: 'daily-goal-2-days-ago',
+    targetMinutes: 20,
+    completedMinutes: 30,
+    targetLessons: 1,
+    completedLessons: 2,
+    date: mockCalendarDate(2),
+    isCompleted: true,
+  ),
+  DailyGoalModel(
+    id: 'daily-goal-yesterday',
+    targetMinutes: 20,
+    completedMinutes: 24,
+    targetLessons: 1,
+    completedLessons: 1,
+    date: mockCalendarDate(1),
+    isCompleted: true,
+  ),
+  DailyGoalModel(
+    id: 'daily-goal-today',
+    targetMinutes: 20,
+    completedMinutes: 25,
+    targetLessons: 1,
+    completedLessons: 1,
+    date: mockCalendarDate(0),
+    isCompleted: true,
+  ),
+]);
